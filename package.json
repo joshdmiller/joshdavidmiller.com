@@ -4,7 +4,10 @@
   "description": "The public website of Josh David Miller",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm run watch &",
+    "build": "./node_modules/.bin/browserify -d -t babelify src/app.js -o dist/app.js",
+    "prewatch": "npm run build",
+    "watch": "./node_modules/.bin/watchify -d -t babelify src/app.js -o dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/joshdmiller/joshdavidmiller.com/issues"
   },
-  "homepage": "https://github.com/joshdmiller/joshdavidmiller.com"
+  "homepage": "https://github.com/joshdmiller/joshdavidmiller.com",
+  "devDependencies": {
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "react": "^0.13.0",
+    "watchify": "^2.4.0"
+  },
+  "dependencies": {
+    "express": "^4.12.2"
+  }
 }
