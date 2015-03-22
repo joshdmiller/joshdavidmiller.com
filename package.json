@@ -4,10 +4,15 @@
   "description": "The public website of Josh David Miller",
   "main": "server.js",
   "scripts": {
-    "prestart": "npm run watch &",
-    "build": "./node_modules/.bin/browserify -d -t babelify src/app.js -o dist/app.js",
-    "prewatch": "npm run build",
-    "watch": "./node_modules/.bin/watchify -d -t babelify src/app.js -o dist/app.js"
+    "prestart": "npm run build",
+    "dev": "npm run watch && npm start",
+    "build-js": "browserify -d -t babelify src/app.js -o dist/app.js",
+    "build-css": "node ./node_modules/.bin/node-sass --include-path node_modules --source-map-embed src/app.scss dist/app.css",
+    "build": "npm run build-js && npm run build-css",
+    "watch-js": "watchify -d -t babelify src/app.js -o dist/app.js &",
+    "watch-css": "node-sass -r -w --source-map-embed src/app.scss dist/app.css &",
+    "watch": "npm run watch-js && npm run watch-css",
+    "postwatch": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,8 +25,10 @@
   },
   "homepage": "https://github.com/joshdmiller/joshdavidmiller.com",
   "devDependencies": {
+    "angular-material": "git://github.com/angular/material#v0.8.3",
     "babelify": "^5.0.4",
     "browserify": "^9.0.3",
+    "node-sass": "^3.0.0-pre",
     "react": "^0.13.0",
     "watchify": "^2.4.0"
   },
