@@ -1,8 +1,10 @@
 import React from 'react';
 
+import Masthead from '../masthead';
+
 const Main = ({ children }) => (
   <div>
-    <h1>Josh David Miller</h1>
+    <Masthead />
     { children }
   </div>
 );
