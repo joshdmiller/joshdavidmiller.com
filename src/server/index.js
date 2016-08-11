@@ -42,6 +42,24 @@ app.use( ( req, res ) => {
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1">
 
+          <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Quicksand">
+          <link rel="stylesheet" href="https://i.icomoon.io/public/temp/96388a9869/joshdavidmillercom/style.css">
+
+          <style>
+            html,
+            body {
+              padding: 0;
+              margin: 0;
+              width: 100%;
+              height: 100%;
+              font-family: 'Open Sans', sans-serif;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+          </style>
+
           <title>Josh David Miller</title>
         </head>
         <body>
