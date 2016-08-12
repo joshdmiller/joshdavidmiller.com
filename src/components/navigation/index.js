@@ -1,6 +1,7 @@
 import React from 'react';
+import Radium from 'radium';
 
-export default ({
+export const Navigation = ({
   isOpen = false,
 }) => {
   const styles = {
@@ -24,6 +25,10 @@ export default ({
       backfaceVisibility: 'hidden',
       transition: 'transform 0.7s',
       transitionTimingFunction: 'cubic-bezier(0.86, 0.01, 0.77, 0.78)',
+
+      '@media (min-width: 1170px)': {
+        padding: '62px 20%',
+      },
     },
   };
 
@@ -50,4 +55,6 @@ export default ({
     </section>
   );
 };
+
+export default Radium( Navigation );
 

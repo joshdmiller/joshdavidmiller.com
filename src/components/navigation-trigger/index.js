@@ -1,6 +1,7 @@
 import React from 'react';
+import Radium from 'radium';
 
-export default ({
+export const NavigationTrigger = ({
   isOpen = false,
   onClick,
 }) => {
@@ -32,6 +33,10 @@ export default ({
       whiteSpace: 'nowrap',
       textIndent: '100%',
       overflow: 'hidden',
+
+      '@media (min-width: 1170px)': {
+        top: 40,
+      }
     },
 
     topLine: {
@@ -115,4 +120,6 @@ export default ({
     </a>
   );
 };
+
+export default Radium( NavigationTrigger );
 

@@ -32,6 +32,8 @@ app.use( ( req, res ) => {
       return res.status( 404 ).send( 'Not found' );
     }
 
+    global.navigator = { userAgent: req.headers[ 'user-agent' ] };
+
     const innerHTML = renderToString(
       <RouterContext {...renderProps} />
     );

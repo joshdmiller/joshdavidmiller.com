@@ -1,5 +1,6 @@
 import React from 'react';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import { StyleRoot } from 'radium';
 
 injectTapEventPlugin();
 
@@ -47,7 +48,7 @@ class Main extends React.Component {
     }
 
     return (
-      <div style={styles.container}>
+      <StyleRoot style={styles.container}>
         <NavigationTrigger isOpen={navIsOpen} onClick={::this._toggleNav} />
         <Navigation isOpen={navIsOpen} />
 
@@ -56,7 +57,7 @@ class Main extends React.Component {
 
           { children }
         </div>
-      </div>
+      </StyleRoot>
     );
   }
 
