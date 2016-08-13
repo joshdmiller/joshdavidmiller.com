@@ -9,7 +9,7 @@ module.exports = {
 
   entry: [
     'react-hot-loader/patch',
-    'webpack-dev-server/client?http://localhost:8888',
+    'webpack-dev-server/client?http://jdm.me:8888',
     'webpack/hot/only-dev-server',
     './src/client/index',
   ],
@@ -17,11 +17,14 @@ module.exports = {
   output: {
     path: path.join( __dirname, 'dist' ),
     filename: 'bundle.js',
-    publicPath: '/static/',
+    publicPath: 'http://jdm.me:8888/static/',
   },
 
   plugins: [
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+    new webpack.NamedModulesPlugin(),
   ],
 
   module: {

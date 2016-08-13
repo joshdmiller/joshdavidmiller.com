@@ -1,5 +1,6 @@
 import React from 'react';
 import Radium from 'radium';
+import tapOrClick from 'react-tap-or-click';
 
 export const NavigationTrigger = ({
   isOpen = false,
@@ -107,7 +108,7 @@ export const NavigationTrigger = ({
   }
 
   return (
-    <a style={styles.container} onTouchTap={onClick}>
+    <a style={styles.container} {...tapOrClick(onClick)}>
       Menu
       <span style={styles.middleLine}>
         <span style={styles.topLine}></span>

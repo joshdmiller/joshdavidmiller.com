@@ -23,7 +23,8 @@ export const Navigation = ({
       padding: '40px 5% 40px calc( 5% + 80px )',
       transform: 'translateZ(0) translateX(-50%)',
       backfaceVisibility: 'hidden',
-      transition: 'transform 0.7s',
+      transitionProperty: 'transform',
+      transitionDuration: '0.7s',
       transitionTimingFunction: 'cubic-bezier(0.86, 0.01, 0.77, 0.78)',
 
       '@media (min-width: 1170px)': {
@@ -42,7 +43,7 @@ export const Navigation = ({
     styles.inner = {
       ...styles.inner,
       transform: 'translateX(0)',
-      transition: 'transform: 0.5s',
+      transitionDuration: '0.5s',
       transitionTimingFunction: 'cubic-bezier(0.82, 0.01, 0.77, 0.78)',
     };
   }

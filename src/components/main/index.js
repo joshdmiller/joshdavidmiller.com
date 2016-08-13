@@ -1,10 +1,6 @@
 import React from 'react';
-import injectTapEventPlugin from 'react-tap-event-plugin';
 import { StyleRoot } from 'radium';
 
-injectTapEventPlugin();
-
-import Masthead from '../masthead';
 import Navigation from '../navigation';
 import NavigationTrigger from '../navigation-trigger';
 
@@ -29,7 +25,8 @@ class Main extends React.Component {
         overflowY: 'auto',
         backgroundColor: '#fff',
         backfaceVisibility: 'hidden',
-        transition: 'transform 0.7s',
+        transitionProperty: 'transform',
+        transitionDuration: '0.7s',
         transitionTimingFunction: 'cubic-bezier(0.91, 0.01, 0.6, 0.99)',
       },
 
@@ -53,8 +50,6 @@ class Main extends React.Component {
         <Navigation isOpen={navIsOpen} />
 
         <div style={styles.content}>
-          <Masthead />
-
           { children }
         </div>
       </StyleRoot>

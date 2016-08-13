@@ -20,7 +20,7 @@ app.use( bodyParser.json() );
 
 app.use( ( req, res ) => {
   // for development, we serve from the webpack dev server
-  const host = '//localhost:8888';
+  const host = '//jdm.me:8888';
   const location = createLocation( req.url );
 
   match({ routes, location }, ( err, redirectLocation, renderProps ) => {
@@ -44,8 +44,7 @@ app.use( ( req, res ) => {
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1">
 
-          <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Quicksand">
-          <link rel="stylesheet" href="https://i.icomoon.io/public/temp/96388a9869/joshdavidmillercom/style.css">
+          <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Quicksand">
 
           <style>
             html,
@@ -54,7 +53,7 @@ app.use( ( req, res ) => {
               margin: 0;
               width: 100%;
               height: 100%;
-              font-family: 'Open Sans', sans-serif;
+              font-family: Roboto, sans-serif;
             }
 
             * {
