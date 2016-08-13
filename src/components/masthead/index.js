@@ -1,8 +1,10 @@
 import React from 'react';
 import Radium from 'radium';
 
+import Container from '../container';
+
 const styles = {
-  container: {
+  wrapper: {
     display: 'flex',
     flexDirection: 'column',
     width: '100%',
@@ -16,6 +18,13 @@ const styles = {
     '@media (min-width: 1170px)': {
       paddingBottom: 240,
     },
+  },
+
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
   header: {
@@ -52,14 +61,16 @@ const styles = {
 };
 
 export const Masthead = () => (
-  <section style={styles.container}>
-    <h1 style={styles.header}>Josh David Miller</h1>
+  <section style={styles.wrapper}>
+    <Container style={styles.container}>
+      <h1 style={styles.header}>Josh David Miller</h1>
 
-    <div style={styles.headline}>
-      product manager, speaker, adviser, entrepreneur
-    </div>
+      <div style={styles.headline}>
+        product manager, speaker, adviser, entrepreneur
+      </div>
 
-    <a style={styles.cta} href="#">Get in Touch</a>
+      <a style={styles.cta} href="#">Get in Touch</a>
+    </Container>
   </section>
 );
 

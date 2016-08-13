@@ -4,6 +4,7 @@ import Radium from 'radium';
 import Masthead from '../masthead';
 import Footer from '../footer';
 import Services from '../services';
+import Jumbotron from '../jumbotron';
 
 export const HomePage = () => {
   const styles = {
@@ -17,7 +18,7 @@ export const HomePage = () => {
   return (
     <div style={styles.container}>
       <Masthead />
-
+      <Jumbotron />
       <Services />
 
       <div style={{minHeight:1000}}></div>

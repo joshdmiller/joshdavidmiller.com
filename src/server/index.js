@@ -44,7 +44,7 @@ app.use( ( req, res ) => {
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1">
 
-          <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Quicksand">
+          <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Quicksand:400,700">
 
           <style>
             html,
