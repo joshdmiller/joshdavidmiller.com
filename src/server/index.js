@@ -45,6 +45,7 @@ app.use( ( req, res ) => {
           <meta name="viewport" content="width=device-width, initial-scale=1">
 
           <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Quicksand:400,700">
+          <script src="https://use.fontawesome.com/236d70eb39.js"></script>
 
           <style>
             html,
@@ -54,6 +55,7 @@ app.use( ( req, res ) => {
               width: 100%;
               height: 100%;
               font-family: Roboto, sans-serif;
+              color: #333;
             }
 
             * {

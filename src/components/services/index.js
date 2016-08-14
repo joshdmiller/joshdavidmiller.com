@@ -4,6 +4,11 @@ import Radium from 'radium';
 import Container from '../container';
 
 const styles = {
+  container: {
+    marginBottom: 120,
+    minHeight: 750,
+  },
+
   header: {
     margin: '10px 0',
     fontSize: 48,
@@ -20,7 +25,7 @@ const styles = {
 };
 
 export const Services = () => (
-  <Container>
+  <Container style={styles.container}>
     <h2 style={styles.header}>
       What do I do?
     </h2>

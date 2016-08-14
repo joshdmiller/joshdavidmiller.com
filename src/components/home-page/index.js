@@ -5,6 +5,7 @@ import Masthead from '../masthead';
 import Footer from '../footer';
 import Services from '../services';
 import Jumbotron from '../jumbotron';
+import About from '../about';
 
 export const HomePage = () => {
   const styles = {
@@ -20,9 +21,7 @@ export const HomePage = () => {
       <Masthead />
       <Jumbotron />
       <Services />
-
-      <div style={{minHeight:1000}}></div>
-
+      <About />
       <Footer />
     </div>
   );
