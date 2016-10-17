@@ -17,6 +17,7 @@ const styles = {
     justifyContent: 'center',
     zIndex: 1,
     background: '#fff',
+    marginBottom: 60,
   },
 
   container: {

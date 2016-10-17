@@ -47,9 +47,9 @@ class Main extends React.Component {
     return (
       <StyleRoot style={styles.container}>
         <NavigationTrigger isOpen={navIsOpen} onClick={::this._toggleNav} />
-        <Navigation isOpen={navIsOpen} />
+        <Navigation isOpen={navIsOpen} toggle={::this._toggleNav} />
 
-        <div style={styles.content}>
+        <div style={styles.content} id="scroller">
           { children }
         </div>
       </StyleRoot>

@@ -1,5 +1,6 @@
 import React from 'react';
 import test from 'tape';
+import { StyleRoot } from 'radium';
 import { shallow } from 'enzyme';
 
 import Main from './';
@@ -9,9 +10,9 @@ test( 'Main', t => {
 
   const wrapper = shallow( <Main><p className="test" /></Main> );
   expected = true;
-  actual = wrapper.is( 'div' );
+  actual = wrapper.is( StyleRoot );
 
-  t.ok( actual === expected, 'renders a div' );
+  t.ok( actual === expected, 'renders a StyleRoot' );
 
   expected = 1;
   actual = wrapper.find( 'p.test' ).length;

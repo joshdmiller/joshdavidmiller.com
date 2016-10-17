@@ -16,9 +16,15 @@ const styles = {
   },
 };
 
-export const Link = ({ style = {}, ...props }) => (
-  <A style={{ ...styles.a, ...style }} {...props} />
-);
+export const Link = ({ style = {}, ...props }) => {
+  if ( ! Array.isArray( style ) ) {
+    style = [ style ];
+  }
+
+  return (
+    <A style={[ styles.a, ...style ]} {...props} />
+  );
+};
 
 export default Radium( Link );
 

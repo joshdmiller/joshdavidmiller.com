@@ -92,15 +92,14 @@ const styles = {
   },
 
   icon: {
-    // flex: 1,
     textAlign: 'center',
     fontSize: 48,
     margin: 20,
   },
 };
 
-export const About = () => (
-  <div style={styles.wrapper}>
+export const About = ({ id }) => (
+  <section style={styles.wrapper} id={id}>
     <svg
       style={ styles.triangle }
       xmlns="http://www.w3.org/2000/svg"
@@ -134,31 +133,31 @@ export const About = () => (
     </Container>
 
     <Container style={styles.container}>
-        <div style={styles.iconList}>
-          <Link style={styles.icon} to="https://twitter.com/joshdmiller">
-            <i className="fa fa-twitter" aria-hidden="true"></i>
-          </Link>
-          <Link style={styles.icon} to="https://linkedin.com/in/joshdmiller">
-            <i className="fa fa-linkedin" aria-hidden="true"></i>
-          </Link>
-          <Link style={styles.icon} to="https://plus.google.com/+JoshDavidMiller">
-            <i className="fa fa-google-plus" aria-hidden="true"></i>
-          </Link>
-          <Link style={styles.icon} to="https://youtube.com">
-            <i className="fa fa-youtube" aria-hidden="true"></i>
-          </Link>
-          <Link style={styles.icon} to="https://facebook.com/000.joshdmiller">
-            <i className="fa fa-facebook-official" aria-hidden="true"></i>
-          </Link>
-          <Link style={styles.icon} to="https://stackoverflow.com/">
-            <i className="fa fa-stack-overflow" aria-hidden="true"></i>
-          </Link>
-          <Link style={styles.icon} to="https://github.com/joshdmiller">
-            <i className="fa fa-github" aria-hidden="true"></i>
-          </Link>
-        </div>
+      <div style={styles.iconList}>
+        <Link style={styles.icon} to="https://twitter.com/joshdmiller">
+          <i className="fa fa-twitter" aria-hidden="true"></i>
+        </Link>
+        <Link style={styles.icon} to="https://linkedin.com/in/joshdmiller">
+          <i className="fa fa-linkedin" aria-hidden="true"></i>
+        </Link>
+        <Link style={styles.icon} to="https://plus.google.com/+JoshDavidMiller">
+          <i className="fa fa-google-plus" aria-hidden="true"></i>
+        </Link>
+        <Link style={styles.icon} to="https://youtube.com">
+          <i className="fa fa-youtube" aria-hidden="true"></i>
+        </Link>
+        <Link style={styles.icon} to="https://facebook.com/000.joshdmiller">
+          <i className="fa fa-facebook-official" aria-hidden="true"></i>
+        </Link>
+        <Link style={styles.icon} to="https://stackoverflow.com/">
+          <i className="fa fa-stack-overflow" aria-hidden="true"></i>
+        </Link>
+        <Link style={styles.icon} to="https://github.com/joshdmiller">
+          <i className="fa fa-github" aria-hidden="true"></i>
+        </Link>
+      </div>
     </Container>
-  </div>
+  </section>
 );
 
 export default Radium( About );

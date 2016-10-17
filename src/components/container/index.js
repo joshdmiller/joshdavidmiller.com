@@ -3,7 +3,6 @@ import Radium from 'radium';
 
 const styles = {
   container: {
-    position: 'relative',
     width: '100%',
     paddingLeft: 15,
     paddingRight: 15,

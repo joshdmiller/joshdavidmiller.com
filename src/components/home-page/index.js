@@ -12,16 +12,15 @@ export const HomePage = () => {
     container: {
       overflowX: 'hidden',
       width: '100%',
-      height: '100%',
     },
   };
 
   return (
     <div style={styles.container}>
-      <Masthead />
-      <Jumbotron />
-      <Services />
-      <About />
+      <Masthead id="top" />
+      <Jumbotron id="headline" />
+      <Services id="services" />
+      <About id="whoami" />
       <Footer />
     </div>
   );
