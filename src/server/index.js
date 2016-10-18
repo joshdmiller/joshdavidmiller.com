@@ -17,6 +17,7 @@ const http = Server( app );
 
 app.use( cors() );
 app.use( bodyParser.json() );
+app.use( '/static', express.static( 'static' ) );
 
 app.use( ( req, res ) => {
   // for development, we serve from the webpack dev server

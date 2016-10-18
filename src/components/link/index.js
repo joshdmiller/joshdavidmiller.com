@@ -16,7 +16,7 @@ const styles = {
   },
 };
 
-export const Link = ({ style = {}, ...props }) => {
+export const Link = ({ style = [], ...props }) => {
   if ( ! Array.isArray( style ) ) {
     style = [ style ];
   }
