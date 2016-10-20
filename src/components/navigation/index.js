@@ -184,9 +184,9 @@ export const Navigation = ({
       fontWeight: '700',
       fontSize: 18,
 
-      ':hover': {
-        color: '#9EC0E1',
-      },
+      // ':hover': {
+      //   color: '#9EC0E1',
+      // },
     },
   };
 
@@ -228,13 +228,13 @@ export const Navigation = ({
           <h3 style={styles.header}>Learn</h3>
 
           <div style={styles.linkList}>
-            <Link to="/startingthoughts" style={styles.link}>
-              Startups
-            </Link>
+            <span key="st" style={styles.link}>
+              Starting Thoughts (Nov 2016)
+            </span>
 
-            <Link to="/codecamp" style={styles.link}>
-              Code Camp
-            </Link>
+            <span key="cc" style={styles.link}>
+              Code Camp (Nov 2016)
+            </span>
           </div>
         </div>
 
