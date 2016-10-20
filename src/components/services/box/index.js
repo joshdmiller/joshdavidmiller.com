@@ -1,11 +1,24 @@
 import React from 'react';
 import Radium from 'radium';
 import tapOrClick from 'react-tap-or-click';
+import {
+  mediaSM,
+  mediaMD,
+  mediaLG,
+} from '../../../styles/breakpoints';
 
 const styles = {
   wrapper: {
     flex: 1,
-    margin: '80px 15px',
+    margin: '20px 15px',
+
+    [mediaMD]: {
+      margin: '80px 15px',
+    },
+
+    [mediaLG]: {
+      margin: '80px 15px',
+    },
   },
 
   container: {
@@ -39,7 +52,7 @@ const styles = {
 
   icon: {
     position: 'relative',
-    marginBottom: 40,
+    marginBottom: 20,
     padding: 10,
     backgroundColor: '#ffffff',
     top: 100,
@@ -56,7 +69,7 @@ const styles = {
   },
 
   description: {
-    width: '80%',
+    width: '85%',
     margin: '0 auto',
     opacity: 0,
     transform: 'scale(0)',

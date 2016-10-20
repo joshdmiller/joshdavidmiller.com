@@ -72,16 +72,19 @@ const Services = ({ id }) => (
 
     <Container style={styles.boxContainer}>
       <Box title="Startup Coaching" icon="graduation-cap">
-        Could someone survive inside a transporter buffer for 75 years? The Federation's gone; the
-        Borg is everywhere!
+        I help make ideas marketable, guiding founders through the difficult terrain
+        of the early startup roadmap: discovering customers, finding product-market fit, and
+        identifying the minimum viable product.
       </Box>
-      <Box title="Product Development" icon="tasks">
-        Well, that's certainly good to know. The unexpected is our normal routine. Mr. Worf, you do
-        remember how to fire phasers? How long can two people talk about nothing?
+      <Box title="Product Strategy" icon="tasks">
+        I work with startups of all sizes to conceptualize, prioritize, develop, and market new
+        products and features, with an intense focus on rigorous hypothesis testing and delightful
+        user experience.
       </Box>
       <Box title="Developer Training" icon="code">
-        Wait a minute - you've been declared dead. You can't give orders around here. Well, I'll say
-        this for him - he's sure of himself.
+        Working with young coders to bridge the gap between hobby and profession is one of my
+        passions. Focusing on pig picture concepts and best practices, I teach aspiring developers
+        how to think about the engineering process.
       </Box>
     </Container>
   </section>
