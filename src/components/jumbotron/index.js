@@ -16,6 +16,11 @@ const events = [
     date: 'Oct 21-23',
   },
   {
+    name: 'Startup Demo Night',
+    url: 'https://www.facebook.com/events/270188080047468/',
+    date: 'Oct 23',
+  },
+  {
     name: 'Course: Intro to JS',
     url: 'https://codementor.io/classes/learn-javascript-live',
     date: 'Nov 7',
@@ -163,6 +168,16 @@ const styles = {
   comingSoon: {
     margin: 0,
   },
+
+  paragraph: {
+    fontSize: 18,
+    marginBottom: 10,
+    lineHeight: 1.3,
+
+    ':last-child': {
+      marginBottom: 0,
+    },
+  },
 };
 
 export const Jumbotron = () => (
@@ -197,12 +212,28 @@ export const Jumbotron = () => (
 
       <div style={[ styles.item, styles.startups ]}>
         <h3 style={styles.itemHeader}>Starting Thoughts</h3>
+        <div style={styles.paragraph}>
+          Most startups fail not from competition but from a poor understanding of their customers.
+        </div>
+
+        <div style={styles.paragraph}>
+          This free collection of key resources for startup founders will focus obtaining
+          product-market fit with Customer Discovery.
+        </div>
         <div style={{flex: 1}} />
         <h3 style={styles.comingSoon}>Coming Soon</h3>
       </div>
 
       <div style={[ styles.item, styles.code ]}>
         <h3 style={styles.itemHeader}>Code Camp</h3>
+        <div style={styles.paragraph}>
+          Good product engineering is adherence to "big picture" concepts that are often missing
+          from code tutorials, which focus on learning the "how".
+        </div>
+
+        <div style={styles.paragraph}>
+          This collection of articles and videos will focus on the "why".
+        </div>
         <div style={{flex: 1}} />
         <h3 style={styles.comingSoon}>Coming Soon</h3>
       </div>
