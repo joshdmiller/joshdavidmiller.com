@@ -49,7 +49,7 @@ const styles = {
     alignItems: 'center',
     flex: 3,
     padding: 30,
-    fontSize: 16,
+    fontSize: 18,
     lineHeight: 1.4,
     textAlign: 'center',
 
@@ -127,7 +127,13 @@ export const About = ({ id }) => (
           </h2>
 
           <p>
-            Shields up! Rrrrred alert! For an android with no feelings, he sure managed to evoke them in others. This should be interesting. Worf, It's better than music. It's jazz. How long can two people talk about nothing? That might've been one of the shortest assignments in the history of Starfleet. You did exactly what you had to do. You considered all your options, you tried every alternative and then you made the hard choice. You're going to be an interesting companion, Mr. Data. What's a knock-out like you doing in a computer-generated gin joint like this? A lot of things can change in twelve years, Admiral.
+            I help early-stage startups launch winning products. Leveraging a background in managing
+            multi-million-dollar marketing analytics initiatives and a passion for science, I have
+            helped dozens of startup achieve product-market fit by focusing on hypothesis testing,
+            measurement, and rapid iteration.  I believe creating memorable, delightful user
+            experience is paramount. I also believe creating great products means embracing failure.
+            If one has never had a bad idea, how would she know if she had a good one? Oh, and I
+            only use my powers for good. 
           </p>
         </div>
     </Container>
