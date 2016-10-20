@@ -34,7 +34,7 @@ const styles = {
   cta: {
     borderRadius: '2em',
     backgroundColor: '#C4756F',
-    padding: '0.5em 0.75em',
+    padding: '0.5em 1.25em',
     minWidth: 250,
     textAlign: 'center',
     fontFamily: 'Quicksand',
@@ -62,7 +62,7 @@ export const Footer = () => (
         Interested in working together?
       </div>
       
-      <a style={styles.cta} href="#">Get in Touch</a>
+      <a style={styles.cta} href="#">Let's Get Started</a>
     </div>
 
     <div style={styles.copyright}>
