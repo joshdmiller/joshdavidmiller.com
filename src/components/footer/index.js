@@ -62,7 +62,13 @@ export const Footer = () => (
         Interested in working together?
       </div>
       
-      <a style={styles.cta} href="#">Let's Get Started</a>
+      <a
+        style={styles.cta}
+        target="_blank"
+        href="mailto:josh@joshdmiller.com?subject=Let's%20Get%20Started&body=What%20can%20I%20help%20you%20achieve%3F"
+      >
+        Let's Get Started
+      </a>
     </div>
 
     <div style={styles.copyright}>

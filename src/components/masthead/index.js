@@ -75,7 +75,13 @@ export const Masthead = ({ id }) => (
         product strategist, speaker, adviser, entrepreneur
       </div>
 
-      <a style={styles.cta} href="#">Get in Touch</a>
+      <a
+        style={styles.cta}
+        target="_blank"
+        href="mailto:josh@joshdmiller.com?subject=Get%20In%20Touch&body=What%20can%20I%20help%20you%20achieve%3F"
+      >
+        Get in Touch
+      </a>
     </Container>
   </section>
 );
